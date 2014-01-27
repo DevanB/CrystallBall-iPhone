@@ -31,36 +31,15 @@
                                 <color key="textColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qf5-h1-FMG">
-                                <rect key="frame" x="26" y="413" width="269" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="269" id="HCo-Ad-OoD"/>
-                                    <constraint firstAttribute="width" constant="269" id="Tmh-Rf-2AQ"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="47" id="aIb-kl-DPR"/>
-                                    <constraint firstAttribute="height" constant="47" id="uBR-h3-bHl"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" image="button-off">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" image="button-on"/>
-                                <connections>
-                                    <action selector="buttonPressed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="66d-Ma-Dob"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="yG5-e2-9CP" firstAttribute="top" secondItem="ZPa-qW-hQe" secondAttribute="bottom" id="5xK-oV-4l0"/>
                             <constraint firstItem="ZPa-qW-hQe" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="NG9-Nv-a0F"/>
-                            <constraint firstAttribute="centerX" secondItem="Qf5-h1-FMG" secondAttribute="centerX" id="OBR-Ak-emc"/>
-                            <constraint firstAttribute="centerX" secondItem="Qf5-h1-FMG" secondAttribute="centerX" id="T6z-Jw-tVG"/>
                             <constraint firstItem="5Nr-7f-kdm" firstAttribute="centerY" secondItem="ZPa-qW-hQe" secondAttribute="centerY" constant="-32" id="ese-51-InF"/>
                             <constraint firstItem="5Nr-7f-kdm" firstAttribute="centerX" secondItem="ZPa-qW-hQe" secondAttribute="centerX" constant="0.5" id="iFm-Ql-bmb"/>
                             <constraint firstItem="ZPa-qW-hQe" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="qOF-gj-LFm"/>
                             <constraint firstAttribute="trailing" secondItem="ZPa-qW-hQe" secondAttribute="trailing" id="tBC-kf-cbZ"/>
-                            <constraint firstItem="yG5-e2-9CP" firstAttribute="top" secondItem="Qf5-h1-FMG" secondAttribute="bottom" constant="20" id="xeu-7x-Wcl"/>
                         </constraints>
                     </view>
                     <connections>
@@ -73,8 +52,6 @@
     </scenes>
     <resources>
         <image name="background" width="320" height="568"/>
-        <image name="button-off" width="261" height="49"/>
-        <image name="button-on" width="261" height="47"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

@@ -15,6 +15,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
 @property (strong, nonatomic) DBCrystalBall *crystalBall;
 
-- (IBAction)buttonPressed;
+- (void) makePrediction;
 
 @end
