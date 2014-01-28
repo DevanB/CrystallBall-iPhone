@@ -26,6 +26,8 @@
     NSURL *soundURL = [NSURL fileURLWithPath:soundPath];
     AudioServicesCreateSystemSoundID(CFBridgingRetain(soundURL), &soundEffect);
     
+    self.predictionLabel.text = nil;
+    
     self.crystalBall = [[DBCrystalBall alloc] init];
     self.backgroundImageView.animationImages = [[NSArray alloc]initWithObjects:
                                                 [UIImage imageNamed:@"CB00001"],
@@ -106,7 +108,7 @@
     self.predictionLabel.text = [self.crystalBall randomPrediction];
     AudioServicesPlaySystemSound(soundEffect);
     
-    [UIView animateWithDuration:6.0 animations:^{
+    [UIView animateWithDuration:8.0 animations:^{
         self.predictionLabel.alpha = 1.0f;
     }];
 }
